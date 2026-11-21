@@ -10,10 +10,10 @@ body {
 
 h1,
 h2 {
-  color: var(--brnad);
+  color: var(--brand);
 }
 
-course-card {
+.course-card {
   background: #eef5ff;
 }
 
@@ -25,11 +25,12 @@ course-card {
   font-size: 1.5rem;
 }
 
-.course-card p {
+.course-card > p {
   background: #fff4d9;
 }
 
 .course-card h2::before {
+  content: "• ";
   color: var(--brand);
 }
 
@@ -37,10 +38,10 @@ course-card {
   color: #12546c;
 }
 
-.action :hover {
+.action:hover {
   color: #6845a8;
 }
 
 .action:focus-visible {
-  outline: 0 solid orange;
+  outline: 3px solid orange;
 }
