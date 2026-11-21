@@ -1,0 +1,13 @@
+index page : <link rel="stylesheet" href="styles.css" />
+
+courses page : <link rel="stylesheet" href="../styles.css" />
+
+Selector:
+.course-card[data-status="full"] .status
+
+الشرح:
+يطابق عنصر <span class="status"> الموجود داخل عنصر <article>
+يحمل class="course-card" وقيمة data-status="full".
+في صفحتي يطابق نص الحالة «اكتمل العدد» في بطاقة CSS Foundations فقط.
+لا يطابق الـ article نفسه ولا الـ h2 ولا الـ p، لذلك يتلون نص الحالة فقط
+بالرمادي ويبقى الوصف على خلفية البطاقة العادية.
