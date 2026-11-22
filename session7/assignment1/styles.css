@@ -1,0 +1,54 @@
+:root {
+  --backgroundPage: #f4f7f8;
+  --backgroundCard: #ffffff;
+  --firstColor: #12546c;
+  --discretionColor: #5f6f78;
+  --badgeColor: #e5f7e8;
+  --badgeTextColor: #237a36;
+  --shadowColor: rgba(18, 84, 108, 0.15);
+}
+body {
+  background-color: var(--backgroundPage);
+}
+.card {
+  background-color: var(--backgroundCard);
+  border: 2px solid var(--firstColor);
+  border-radius: 16px;
+  padding: 10px 25px;
+  margin-block: 10%;
+  margin-inline: 35%;
+  box-shadow: 0 8px 18px var(--shadowColor);
+  overflow: auto;
+}
+.badge {
+  background-color: var(--badgeColor);
+  color: var(--badgeTextColor);
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-flex;
+  margin: 0px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.title {
+  color: var(--firstColor);
+  font-weight: bold;
+}
+p {
+  color: var(--discretionColor);
+}
+button {
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 2px solid var(--firstColor);
+  background-color: var(--backgroundCard);
+  color: var(--firstColor);
+  font-weight: bold;
+  font-size: medium;
+  margin-left: 8px;
+  margin-block: 3px;
+}
+.btn {
+  background-color: var(--firstColor);
+  color: var(--backgroundCard);
+}
