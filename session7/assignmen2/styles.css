@@ -1,0 +1,75 @@
+:root {
+  --backgroundPage: #f5f3ff;
+  --backgroundCard: #ffffff;
+  --firstColor: #6d28d9;
+  --titleColor: #1f2937;
+  --secondaryText: #6b7280;
+  --badgeColor: #ede9fe;
+  --borderColor: #ddd6fe;
+  --shadowColor: rgba(109, 40, 217, 0.12);
+}
+body {
+  background-color: var(--backgroundPage);
+}
+.card {
+  background-color: var(--backgroundCard);
+  border: 2px solid var(--borderColor);
+  border-radius: 16px;
+  padding: 10px 25px;
+  margin-block: 10%;
+  margin-inline: 35%;
+  box-shadow: 0 8px 18px var(--shadowColor);
+  overflow: auto;
+  text-align: center;
+}
+.badge {
+  background-color: var(--badgeColor);
+  color: var(--firstColor);
+  padding: 10px 25px;
+  border-radius: 25px;
+  display: inline-flex;
+  margin: 0px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.title {
+  color: var(--titleColor);
+  font-weight: bold;
+  font-size: 30px;
+  display: block;
+  margin-block: 10px;
+}
+.price {
+  color: var(--firstColor);
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+  margin-block: 10px;
+}
+.des {
+  color: var(--secondaryText);
+  font-size: 24px;
+}
+hr {
+  border-color: var(--borderColor);
+}
+
+pre {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--titleColor);
+  white-space: pre-line;
+  line-height: 1.5;
+}
+button {
+  padding: 10px 0px;
+  border-radius: 12px;
+  background-color: var(--firstColor);
+  color: var(--backgroundCard);
+  font-weight: bold;
+  font-size: 30px;
+  margin-block: 5px;
+  width: 100%;
+}
