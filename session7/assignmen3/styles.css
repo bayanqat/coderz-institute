@@ -1,0 +1,82 @@
+:root {
+  --backgroundPage: #f1f5f9;
+  --backgroundCardButtonText: #ffffff;
+  --headingColor: #0f172a;
+  --descriptionTimeColor: #64748b;
+  --borderColor: #cbd5e1;
+  --card1: #0369a1;
+  --card1Background: #e0f2fe;
+  --card2: #15803d;
+  --card2Background: #dcfce7;
+}
+body {
+  background-color: var(--backgroundPage);
+  text-align: center;
+}
+.heading {
+  color: var(--headingColor);
+  display: block;
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 38px;
+}
+p {
+  color: var(--descriptionTimeColor);
+  font-size: 22px;
+  margin: 2px;
+}
+.card {
+  background-color: var(--backgroundCardButtonText);
+  border: 2px solid var(--borderColor);
+  border-inline-start: 8px solid var(--main);
+  border-radius: 16px;
+  padding: 10px 15px;
+  margin-block: 15px;
+  margin-inline: 35%;
+  text-align: start;
+  overflow: auto;
+}
+.badge {
+  background-color: var(--light);
+  color: var(--main);
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: inline-flex;
+  margin: 0px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.title {
+  color: var(--headingColor);
+  font-weight: bold;
+  font-size: 30px;
+  display: block;
+  margin-block: 10px;
+}
+
+.time {
+  color: var(--descriptionTimeColor);
+  font-size: 18px;
+  font-weight: 500;
+  margin-block: 8px;
+}
+
+button {
+  padding: 15px 25px;
+  border-radius: 12px;
+  border: 0;
+  background-color: var(--main);
+  color: var(--light);
+  font-weight: bold;
+  font-size: 24px;
+  margin-block: 5px;
+}
+.card-blue {
+  --main: var(--card1);
+  --light: var(--card1Background);
+}
+.card-green {
+  --main: var(--card2);
+  --light: var(--card2Background);
+}
