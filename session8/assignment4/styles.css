@@ -1,0 +1,116 @@
+:root {
+  --pageBackground: #f8fafc;
+  --panelBackground: #f1f5f9;
+  --cardBackground: #ffffff;
+  --borderColor: #cbd5e1;
+  --headingColor: #0f172a;
+  --descriptionColor: #64748b;
+  --blueText: #1d4ed8;
+  --blueBackground: #dbeafe;
+  --yellowText: #b45309;
+  --yellowBackground: #fef3c7;
+  --greenText: #15803d;
+  --greenBackground: #dcfce7;
+}
+
+body {
+  background-color: var(--pageBackground);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.heading {
+  color: var(--headingColor);
+  font-size: 64px;
+  font-weight: bold;
+  margin: 20px 40px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.panel {
+  background-color: var(--panelBackground);
+  border: 2px solid var(--borderColor);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 380px;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 0;
+}
+
+.panelTitle {
+  color: var(--headingColor);
+  font-size: 34px;
+  margin: 0;
+}
+
+.count {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card {
+  background-color: var(--cardBackground);
+  border: 2px solid var(--borderColor);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.title {
+  color: var(--headingColor);
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 12px;
+}
+
+.description {
+  color: var(--descriptionColor);
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.blue {
+  background-color: var(--blueBackground);
+  color: var(--blueText);
+}
+
+.yellow {
+  background-color: var(--yellowBackground);
+  color: var(--yellowText);
+}
+
+.green {
+  background-color: var(--greenBackground);
+  color: var(--greenText);
+}
