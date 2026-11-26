@@ -1,0 +1,84 @@
+:root {
+  --pageBackground: #f5f3ff;
+  --cardPrimaryButtonText: #ffffff;
+  --buttonsRoleTagText: #6d28d9;
+  --tagBackgrounds: #ede9fe;
+  --name: #183b42;
+  --description: #64748b;
+  --cardBorder: #cbd5e1;
+}
+body {
+  background-color: var(--pageBackground);
+}
+
+.panel {
+  background-color: var(--cardPrimaryButtonText);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  gap: 40px;
+  border: 2px solid var(--cardBorder);
+  border-radius: 16px;
+  padding: 40px;
+  width: 70%;
+  margin: 60px auto;
+}
+
+.photo {
+  background-color: var(--tagBackgrounds);
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.heading {
+  color: var(--name);
+  display: block;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.title {
+  color: var(--buttonsRoleTagText);
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+  margin-block: 10px;
+}
+
+.description {
+  color: var(--description);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.card {
+  background-color: var(--tagBackgrounds);
+  color: var(--buttonsRoleTagText);
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: bold;
+  display: inline-flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 40px;
+  border-radius: 8px;
+  border: 2px solid var(--buttonsRoleTagText);
+  background-color: var(--cardPrimaryButtonText);
+  color: var(--buttonsRoleTagText);
+  font-weight: bold;
+  font-size: medium;
+  display: inline-flex;
+  margin-inline-end: 12px;
+  margin-bottom: 12px;
+}
+
+.btn {
+  background-color: var(--buttonsRoleTagText);
+  color: var(--cardPrimaryButtonText);
+}
